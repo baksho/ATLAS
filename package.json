@@ -1,0 +1,33 @@
+{
+  "name": "atlas-claude-code",
+  "version": "1.0.0",
+  "description": "ATLAS — Adaptive Thinking Layer for Agentic Systems. Multi-agent orchestration for Claude Code with Socratic planning, persistent codebase memory, and confidence-gated execution.",
+  "author": "Baksho (https://github.com/Baksho)",
+  "license": "MIT",
+  "homepage": "https://github.com/Baksho/ATLAS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Baksho/ATLAS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Baksho/ATLAS/issues"
+  },
+  "keywords": [
+    "claude-code",
+    "multi-agent",
+    "orchestration",
+    "mcp",
+    "ai-agents",
+    "agentic-coding",
+    "claude",
+    "anthropic"
+  ],
+  "scripts": {
+    "setup": "powershell -ExecutionPolicy Bypass -File scripts/setup.ps1",
+    "build:mcp": "cd mcp-server && npm install && npm run build",
+    "start:mcp": "node mcp-server/dist/index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
