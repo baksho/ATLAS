@@ -136,7 +136,7 @@ ATLAS detects natural language and activates automatically — no commands requi
 - **Windows** (macOS/Linux support planned)
 - **Node.js** >= 20
 - **Claude Code** installed and working in VS Code
-- **Claude Max** subscription or **Anthropic API key**
+- **Claude Pro** subscription or **Anthropic API key**
 
 ---
 
@@ -147,7 +147,7 @@ ATLAS detects natural language and activates automatically — no commands requi
 Open **PowerShell** and run:
 
 ```powershell
-git clone https://github.com/Baksho/ATLAS.git
+git clone https://github.com/baksho/ATLAS.git
 cd ATLAS
 ```
 
@@ -309,34 +309,6 @@ Example:
 ```
 
 **Add `.atlas/` to your `.gitignore`** if you do not want to commit this file, or commit it to share context with your team.
-
----
-
-## Uploading to GitHub
-
-### Step 1 — Create a new repository on GitHub
-
-1. Go to [https://github.com/new](https://github.com/new)
-2. Repository name: `ATLAS`
-3. Set it to **Public** or **Private** as you prefer
-4. **Do not** initialize with a README, .gitignore, or license (we have these already)
-5. Click **Create repository**
-
-### Step 2 — Initialize git and push
-
-Open PowerShell in the ATLAS directory:
-
-```powershell
-cd C:\path\to\ATLAS
-git init
-git add .
-git commit -m "Initial release: ATLAS v1.0.0"
-git branch -M main
-git remote add origin https://github.com/Baksho/ATLAS.git
-git push -u origin main
-```
-
-That's it. Your repository is live at `https://github.com/Baksho/ATLAS`.
 
 ---
 
